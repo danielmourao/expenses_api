@@ -1,0 +1,12 @@
+﻿insert into public.category (id, name, categorytype) values (1, 'Salário', 'receita');
+insert into public.category (id, name, categorytype) values (2, 'Investimento', 'receita');
+insert into public.category (id, name, categorytype) values (3, 'Aplicação', 'receita');
+insert into public.category (id, name, categorytype) values (4, 'Contas Residenciais', 'despesa');
+insert into public.category (id, name, categorytype) values (5, 'Educação', 'despesa');
+insert into public.category (id, name, categorytype) values (6, 'Mercado', 'despesa');
+insert into public.category (id, name, categorytype) values (7, 'Moradia', 'despesa');
+insert into public.category (id, name, categorytype) values (8, 'Saúde', 'despesa');
+insert into public.category (id, name, categorytype) values (9, 'Transporte', 'despesa');
+insert into public.category (id, name, categorytype) values (10, 'Compras', 'despesa');
+insert into public.category (id, name, categorytype) values (11, 'Bar/Restaurantes', 'despesa');
+insert into public.category (id, name, categorytype) values (12, 'Cuidados Pessoais', 'despesa');
