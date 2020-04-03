@@ -1,6 +1,7 @@
+
 import 'package:dart_week_api/dart_week_api.dart';
 
-class LoginRequest extends Serializable {
+class SaveUserRequest extends Serializable {
 
   String username;
   String password;
@@ -8,8 +9,8 @@ class LoginRequest extends Serializable {
   @override
   Map<String, dynamic> asMap() {
     return {
-      'login': username,
-      'senha': password
+      'username': username,
+      'password': password
     };
   }
 
@@ -20,17 +21,14 @@ class LoginRequest extends Serializable {
   }
 
   Map<String, String> validate() {
-    final Map<String, String> validateResult = {};
-
+    final Map<String, String> mapValidate = {};
     if(username == null || username.isEmpty) {
-      validateResult['username'] = 'Usuário obrigatório';
+      mapValidate['username'] = 'Nome de usuário obrigatório.';
     }
-
     if(password == null || password.isEmpty) {
-      validateResult['password'] = 'Senha obrigatória';
-    }
+      mapValidate['password'] = 'Senha de usuário obrigatória.';
+    }    
 
-    return validateResult;
+    return mapValidate;
   }
-
 }

@@ -13,7 +13,13 @@ class  _TransactionModel {
   int id;
 
   @Column()
+  String description;
+
+  @Column()
   DateTime transactionDate;
+
+  @Column()
+  double value;
 
   @Relate(#transactions)
   UserModel users;
